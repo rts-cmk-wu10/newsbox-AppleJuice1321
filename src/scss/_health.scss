@@ -1,15 +1,10 @@
-.category {
+.hidden {
+    display: none;
+}
+
+.categoryHealth__click {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.arrowHealth, .arrowSports {
-    transform: rotate(90deg);
-}
-
-.arrowRotateHealth, .arrowRotateSports {
-    transform: rotate(0);
+    padding: 1em 1.5em;
+    border: 1px solid black;
 }
