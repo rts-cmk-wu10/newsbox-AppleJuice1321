@@ -7,22 +7,58 @@
 	<link rel="stylesheet" href="./main.css">
 </head>
 <body>
-	<!-- Heading -->
+	<!-- HHEADING -->
 	<header class="siteHeader">
+
+		<!-- NAVBAR -->
 		<nav class="primaryNav">
 			<ul class="primaryNav__ul">
 				<li class="primaryNav__li"><a href="#" class="primaryNav__a"><i data-feather="inbox"></i></a></li>
-				<h1>Newsbox</h1>
-				<li class="primaryNav__li"><a href="#" class="primaryNav__a"><i data-feather="settings"></i></a></li>
+				<h1 class="siteHeadingHome siteHeadingHome__visible">Newsbox</h1>
+				<h1 class="siteHeadingSettings siteHeadingSettings__hidden">News settings</h1>
+				<li class="primaryNav__li"><a href="#" class="primaryNav__a"><i class="primaryNav__settings" data-feather="settings"></i></a></li>
 			</ul>
 		</nav>
-		<form class="siteForm">
+
+		<!-- SEARCHBAR -->
+		<form class="siteForm formHidden">
 			<input class="siteForm__searchBar" type="search" placeholder="Search news">
 		</form>
+
+		<section class="settings settingsHidden">
+			<div class="settings__headings">
+				<h1>Manage</h1>
+				<h2>Categories</h2>
+			</div>
+
+			<section class="settings__toggles">
+				<section class="toggle toggleEurope">
+					<h1>EUROPE</h1>
+				</section>
+				<section class="toggle toggleHealth">
+					<h1>HEALTH</h1>
+				</section>
+				<section class="toggle toggleSports">
+					<h1>SPORTS</h1>
+				</section>
+				<section class="toggle toggleBusiness">
+					<H1>BUSINESS</H1>
+				</section>
+				<section class="toggle toggleTravel">
+					<h1>TRAVEL</h1>
+				</section>
+			</section>
+
+			<button class="ToggleDarkMode">TOGGLE DARK MODE</button>
+
+			<span>[Insert Version here]</span>
+		</section>
 	</header>
 
-	<!-- Content -->
+	<!-- CONTENT -->
 	<main class="siteContent">
+
+		<!-- HEALTH -->
 		<section class="categoryHealth">
 			<!-- click to drop down -->
 			<section class="categoryHealth__click">
@@ -32,6 +68,48 @@
 
 			<!-- Dropdown -->
 			<section class="categoryHealth__dropdown hidden">
+
+			</section>
+		</section>
+
+		<!-- WORLD -->
+		<section class="categoryWorld">
+			<!-- click to drop down -->
+			<section class="categoryWorld__click">
+				<h1 class="CategoryWorld__heading">WORLD</h1>
+				<i class="arrow" data-feather="chevron-right"></i>
+			</section>
+
+			<!-- Dropdown -->
+			<section class="categoryWorld__dropdown hidden">
+
+			</section>
+		</section>
+
+		<!-- TRAVEL -->
+		<section class="categoryTravel">
+			<!-- click to drop down -->
+			<section class="categoryTravel__click">
+				<h1 class="CategoryTravel__heading">TRAVEL</h1>
+				<i class="arrow" data-feather="chevron-right"></i>
+			</section>
+
+			<!-- Dropdown -->
+			<section class="categoryTravel__dropdown hidden">
+
+			</section>
+		</section>
+
+		<!-- SPORT -->
+		<section class="categorySports">
+			<!-- click to drop down -->
+			<section class="categorySports__click">
+				<h1 class="CategorySports__heading">SPORTS</h1>
+				<i class="arrow" data-feather="chevron-right"></i>
+			</section>
+
+			<!-- Dropdown -->
+			<section class="categorySports__dropdown hidden">
 
 			</section>
 		</section>
