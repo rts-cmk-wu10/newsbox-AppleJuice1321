@@ -1,0 +1,39 @@
+.settings {
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.settingsHidden {
+    display: none;
+}
+
+.settings__headings {
+    text-align: center;
+}
+
+.settings__toggles {
+    background-color: violet;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.toggle {
+    padding: 2em;
+    border: 1px solid black;
+}
+
+.siteHeadingHome {
+    display: none;
+}
+
+.siteHeadingHome__visible {
+    display: block;
+}
+
+.siteHeadingSettings__hidden {
+    display: none;
+}

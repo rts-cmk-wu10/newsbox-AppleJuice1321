@@ -1,2 +1,6 @@
 import "./style.scss"
 import "./scripts/healthAPI"
+import "./scripts/worldAPI"
+import "./scripts/travelAPI"
+import "./scripts/sportsAPI"
+import "./scripts/settings"

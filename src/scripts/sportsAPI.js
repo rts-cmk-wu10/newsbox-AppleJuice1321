@@ -1,7 +1,7 @@
 export default (function () {
     if (!window.location.pathname.includes("index.html")) return
 
-    fetch("https://api.nytimes.com/svc/topstories/v2/health.json?api-key=GIh5HEZpHXp8aQ1fvIEAR0bKzwYPWvQa")
+    fetch("https://api.nytimes.com/svc/topstories/v2/sports.json?api-key=GIh5HEZpHXp8aQ1fvIEAR0bKzwYPWvQa")
 
         .then(function (response) {
 
@@ -9,28 +9,29 @@ export default (function () {
                 return response.json()
 
             } else {
-                const ERROR = document.querySelector(".categoryHealth__dropdown")
+                const ERROR = document.querySelector(".categorySports__dropdown")
                 ERROR.innerText = "ups, noget gik galt. Prøv igen senere"
+
             }
         })
 
         // Hent data
-        .then(function (healthData) {
-            const CATEGORY_HEALTH_DROP_DOWN = document.querySelector(".categoryHealth__dropdown")
+        .then(function (sportsData) {
+            const CATEGORY_DROP_DOWN = document.querySelector(".categorySports__dropdown")
 
             // Laver elementer for hver artikel
-            healthData.results.forEach(function (healthArticles) {
+            sportsData.results.forEach(function (sportsArticles) {
                 const ARTICLE = document.createElement("article")
-                const IMG = (healthArticles.multimedia && healthArticles.multimedia[0].url) || ""
+                const IMG = (sportsArticles.multimedia && sportsArticles.multimedia[0].url) || ""
 
                 ARTICLE.innerHTML = `
                     <img class="articleImg" src="${IMG}">
                     <div class="healthArticle__container">
-                        <a class="healthHeading" href="${healthArticles.title}">${healthArticles.title}</a>
-                        <p class="healthAbstract">${healthArticles.abstract}</p> 
+                        <a class="healthHeading" href="${sportsArticles.title}">${sportsArticles.title}</a>
+                        <p class="healthAbstract">${sportsArticles.abstract}</p> 
                     </div>
                     `
-                CATEGORY_HEALTH_DROP_DOWN.append(ARTICLE)
+                CATEGORY_DROP_DOWN.append(ARTICLE)
             })
         })
 

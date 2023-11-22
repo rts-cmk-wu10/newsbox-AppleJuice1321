@@ -2,9 +2,23 @@
     display: none;
 }
 
-.categoryHealth__click {
+.categoryHealth__click, .categoryWorld__click, .categoryTravel__click, .categorySport__click {
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
     border: 1px solid black;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+
+.articleImg {
+    height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    margin: 1em 1.5em 1em 1em;
 }
