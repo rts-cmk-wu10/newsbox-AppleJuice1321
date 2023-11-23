@@ -1,0 +1,26 @@
+.toggle__containerLeft {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 4em;
+    height: 2em;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.toggle__containerRight {
+    display: flex;
+    justify-content: right;
+}
+
+.toggle__btn {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+}
+
+
+.categoryHealth__hidden {
+    display: none;
+}
