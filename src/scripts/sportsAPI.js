@@ -36,12 +36,12 @@ export default (function () {
         })
 
         // click event
-        const CATEGORY_CLICK = document.querySelector(".categoryHealth__click")
+        const CATEGORY_CLICK = document.querySelector(".categorySports__click")
         CATEGORY_CLICK.addEventListener("click", clickHandler)
 
         // toggle hide & un-hide dropdown
         function clickHandler() {
-            const CATEGORY_DROPDOWN = document.querySelector(".categoryHealth__dropdown")
+            const CATEGORY_DROPDOWN = document.querySelector(".categorySports__dropdown")
             CATEGORY_DROPDOWN.classList.toggle("hidden")
         }
 })()
